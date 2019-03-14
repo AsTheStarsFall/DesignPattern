@@ -1,7 +1,7 @@
 package com.tianhy.designpattern.prototype.masteryi;
 
 /**
- * @Desc:
+ * @Desc: 深克隆测试类
  * @Author: thy
  * @CreateTime: 2019/3/14
  **/
