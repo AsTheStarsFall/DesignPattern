@@ -10,4 +10,5 @@ public class JavaCourse implements ICourse{
     public void record() {
         System.out.println("Java录制");
     }
+
 }

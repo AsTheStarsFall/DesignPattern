@@ -14,7 +14,7 @@ public class ContainerSingleton {
             if (!ioc.containsKey(className)) {
                 Object obj = null;
                 try {
-                    obj = Class.forName(className).newInstance();
+                    obj = Class.forName(className).getConstructor().newInstance();
                     ioc.put(className, obj);
                 } catch (Exception e) {
                     e.printStackTrace();

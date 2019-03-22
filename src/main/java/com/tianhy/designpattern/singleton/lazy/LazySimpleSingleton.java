@@ -10,8 +10,9 @@ public class LazySimpleSingleton {
 
     private static LazySimpleSingleton lazySimpleSingleton = null;
 
-    //加上synchronized关键字后，一个线程执行完，下一个线程才会被执行
+    //加上synchronized关键字后，一个线程执行完，下一个线程 才会被执行
     //弊端：线程数量多的情况下,CPU占用过高，会出现线程阻塞
+    //优化方案：doubleCheck 双if加锁
     public synchronized static LazySimpleSingleton getInstance(){
         //非空判断，如果第二次调用会覆盖
         /**
@@ -21,7 +22,8 @@ public class LazySimpleSingleton {
          * 3：两个线程同时进入判断，线程1执行完并且打印，再执行线程2并且打印，得到不同的值
          */
         if(lazySimpleSingleton == null){
-            lazySimpleSingleton = new LazySimpleSingleton(); //分配内存给对象，引用指向这个内存地址
+            //分配内存给对象，引用指向这个内存地址
+            lazySimpleSingleton = new LazySimpleSingleton();
         }
         return lazySimpleSingleton;
     }

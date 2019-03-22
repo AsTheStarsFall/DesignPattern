@@ -1,7 +1,7 @@
 package com.tianhy.designpattern.factory.abstractfactory;
 
 /**
- * @Desc: 产品族具体工厂类，在这里实例化对象
+ * @Desc: Java产品族具体工厂类，在这里实例化对象
  * @Author: thy
  * @CreateTime: 2019/3/11
  **/

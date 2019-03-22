@@ -6,6 +6,9 @@ package com.tianhy.designpattern.factory;
  * @CreateTime: 2019/3/11
  **/
 public interface  ICourse {
-    //录制视频
-    public void record();
+    /**
+     *     录制视频
+     */
+     void record();
+
 }

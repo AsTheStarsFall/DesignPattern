@@ -1,5 +1,6 @@
 package com.tianhy.designpattern.strategy;
 
+
 /**
  * @Desc:
  * @Author: thy
@@ -8,11 +9,9 @@ package com.tianhy.designpattern.strategy;
 public class HeroTest {
 
     public static void main(String[] args) {
-//        Hero Riven = new Hero(new RivenStrategy());
-//        Riven.createHero();
+
 
         String heroName = "";
-
         Hero hero = new Hero(HeroStrategyFactory.getHeroStrategy(heroName));
         hero.createHero();
 

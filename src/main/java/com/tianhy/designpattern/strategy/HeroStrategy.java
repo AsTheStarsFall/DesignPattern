@@ -1,7 +1,7 @@
 package com.tianhy.designpattern.strategy;
 
 /**
- * @Desc: 创建英雄的策略
+ * @Desc: 英雄策略
  * @Author: thy
  * @CreateTime: 2019/3/20
  **/

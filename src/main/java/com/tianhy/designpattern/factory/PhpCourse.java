@@ -6,9 +6,9 @@ package com.tianhy.designpattern.factory;
  * @CreateTime: 2019/3/11
  **/
 public class PhpCourse implements ICourse{
-
     @Override
     public void record() {
         System.out.println("Php录制");
     }
+
 }

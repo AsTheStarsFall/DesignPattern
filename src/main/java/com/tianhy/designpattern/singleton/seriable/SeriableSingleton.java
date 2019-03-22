@@ -26,9 +26,11 @@ public class SeriableSingleton implements Serializable {
         return INSTANCE;
     }
 
+
+    //防止序列化，增加readResolve()方法返回实例
+    //在源码中，新创建的实例并没有返回，还是原来的
     private Object readResolve(){
         return INSTANCE;
     }
-
 
     }

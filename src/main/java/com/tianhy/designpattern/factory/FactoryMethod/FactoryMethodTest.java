@@ -10,8 +10,8 @@ public class FactoryMethodTest {
     public static void main(String[] args) {
 
         ICourseFactory factory = new JavaCourseFactory();
-        factory.create().record();
+        factory.create();
         factory = new PhpCourseFactory();
-        factory.create().record();
+        factory.create();
     }
 }

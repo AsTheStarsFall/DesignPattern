@@ -47,7 +47,6 @@ public class QitianDasheng extends Monkey implements Cloneable, Serializable {
 
     //浅克隆
     public QitianDasheng shallowClone(QitianDasheng original){
-
         QitianDasheng qitianDasheng = new QitianDasheng();
         qitianDasheng.birthday = new Date();
         qitianDasheng.jinGuBang = original.jinGuBang;

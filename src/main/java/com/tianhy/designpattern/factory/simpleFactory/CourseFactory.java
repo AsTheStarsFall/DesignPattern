@@ -1,6 +1,10 @@
 package com.tianhy.designpattern.factory.simpleFactory;
 
 import com.tianhy.designpattern.factory.ICourse;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.lang.reflect.Method;
 
 /**
  * @Desc: 只需要一个参数就可以获取所需对象
@@ -32,16 +36,18 @@ public class CourseFactory {
         return null;
     }*/
 
-    //利用类反射
+    //利用类反射，根据传入的参数拿到实例
     public ICourse create(Class<? extends ICourse> clazz) {
         try {
             if(null != clazz){
-            return clazz.newInstance();
+            return clazz.getDeclaredConstructor().newInstance();
             }
         }catch (Exception e){
             e.printStackTrace();
         }
         return null;
     }
+
+
 
     }

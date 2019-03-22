@@ -9,6 +9,9 @@ import java.util.Map;
  * @CreateTime: 2019/3/20
  **/
 public class HeroStrategyFactory {
+    /**
+     * 有很多英雄，只是他们的行为不同
+     */
     private static final String RIVEN = "Riven";
     private static final String VN = "vn";
     private static final String LUCIAN = "Lucian";

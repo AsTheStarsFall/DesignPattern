@@ -11,6 +11,8 @@ public class LazyDoubleCheckSingleton {
 
     private static LazyDoubleCheckSingleton lazy = null;
 
+    //synchronized锁总归还是对性能有影响
+    //更好的优化方案：静态内部类
     public synchronized static LazyDoubleCheckSingleton getInstance(){
         if(lazy == null){
             synchronized (LazyDoubleCheckSingleton.class) {

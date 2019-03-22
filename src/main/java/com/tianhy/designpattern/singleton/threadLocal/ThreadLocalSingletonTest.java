@@ -1,6 +1,6 @@
 package com.tianhy.designpattern.singleton.threadLocal;
 
-import com.tianhy.designpattern.ExectorThread;
+import com.tianhy.designpattern.singleton.ExecutorThread;
 
 /**
  * @Desc:
@@ -14,8 +14,9 @@ public class ThreadLocalSingletonTest {
         System.out.println(ThreadLocalSingleton.getInstance());
         System.out.println(ThreadLocalSingleton.getInstance());
         System.out.println(ThreadLocalSingleton.getInstance());
-        Thread t1 = new Thread(new ExectorThread());
-        Thread t2 = new Thread(new ExectorThread());
+
+        Thread t1 = new Thread(new ExecutorThread());
+        Thread t2 = new Thread(new ExecutorThread());
         t1.start();
         t2.start();
         System.out.println("End");

@@ -1,5 +1,6 @@
 package com.tianhy.designpattern.factory.simpleFactory;
 
+import com.tianhy.designpattern.factory.ICourse;
 import com.tianhy.designpattern.factory.JavaCourse;
 
 /**
@@ -19,12 +20,14 @@ public class SimpleFactoryTest {
 
         //工厂模式
         CourseFactory factory = new CourseFactory();
+
         //factory.create("java").record();
         //类名反射
         //factory.create("com.tianhy.designpattern.factory.JavaCourse").record();
 
         //类反射
-        factory.create(JavaCourse.class).record();
+        ICourse iCourse = factory.create(JavaCourse.class);
+        iCourse.record();
 
     }
 }

@@ -6,6 +6,5 @@ package com.tianhy.designpattern.factory.abstractfactory;
  * @CreateTime: 2019/3/11
  **/
 public interface INote {
-
     void edit();
 }

@@ -10,8 +10,14 @@ public class AbstractFactoryTest {
 
     public static void main(String[] args) {
 
+        //java产品族
         JavaCourseFactory factory = new JavaCourseFactory();
         factory.createNote().edit();
         factory.createVideo().record();
+
+        //PHP产品族
+        PhpCourseFactory phpCourseFactory=new PhpCourseFactory();
+        phpCourseFactory.createNote().edit();
+        phpCourseFactory.createVideo().record();
     }
 }

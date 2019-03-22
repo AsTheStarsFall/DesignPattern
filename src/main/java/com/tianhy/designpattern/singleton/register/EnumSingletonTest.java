@@ -3,7 +3,7 @@ package com.tianhy.designpattern.singleton.register;
 import java.io.*;
 
 /**
- * @Desc: 枚举式单例在静态代码块中就给INSTANCE进行了赋值，是饿汉式单例的实现。
+ * @Desc: 枚举不被反射和序列化破坏
  * @Author: thy
  * @CreateTime: 2019/3/12
  **/

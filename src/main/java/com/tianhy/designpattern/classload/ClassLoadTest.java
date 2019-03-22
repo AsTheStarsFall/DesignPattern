@@ -1,4 +1,4 @@
-package com.tianhy.designpattern;
+package com.tianhy.designpattern.classload;
 
 /**
  * @Desc:
@@ -11,8 +11,10 @@ public class ClassLoadTest {
 
         try {
             ClassLoadDemo test=new ClassLoadDemo();
-            ClassLoadDemo test1=new ClassLoadDemo();
-            ClassLoadDemo test2=new ClassLoadDemo();
+            ClassLoadDemo.display();
+            test.display_1();
+            /*ClassLoadDemo test1=new ClassLoadDemo();
+            ClassLoadDemo test2=new ClassLoadDemo();*/
 
         }catch (Exception e){
             e.printStackTrace();

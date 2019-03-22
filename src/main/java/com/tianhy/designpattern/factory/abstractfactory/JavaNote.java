@@ -1,7 +1,7 @@
 package com.tianhy.designpattern.factory.abstractfactory;
 
 /**
- * @Desc:
+ * @Desc: java产品族中的java笔记
  * @Author: thy
  * @CreateTime: 2019/3/11
  **/
